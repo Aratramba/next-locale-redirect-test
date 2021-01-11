@@ -1,0 +1,7 @@
+.next
+*.DS_Store
+*.log
+node_modules
+out
+public/cms
+public/robots.txt
