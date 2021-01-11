@@ -3,6 +3,5 @@
 *.log
 node_modules
 out
-public/cms
 public/robots.txt
 .vercel
