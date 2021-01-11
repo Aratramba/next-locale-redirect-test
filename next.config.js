@@ -1,6 +1,6 @@
 module.exports = {
   async rewrites() {
-    return [{ source: "/cms/(.*)", destination: "/cms", locale: false }];
+    return [{ source: "/cms/(.*)", destination: "/cms/index.html" }];
   },
   serverRuntimeConfig: {
     rootDir: __dirname,
@@ -9,5 +9,4 @@ module.exports = {
     locales: ["en", "nl"],
     defaultLocale: "nl",
   },
-  basePath: "",
 };
