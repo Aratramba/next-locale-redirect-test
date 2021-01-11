@@ -1,6 +1,6 @@
 module.exports = {
   async rewrites() {
-    return [{ source: "/cms/(.*)", destination: "/cms/index.html" }];
+    return [{ source: "/cms/(.*)", destination: "/" }];
   },
   serverRuntimeConfig: {
     rootDir: __dirname,
