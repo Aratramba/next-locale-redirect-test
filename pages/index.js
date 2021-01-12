@@ -1,12 +1,7 @@
-export async function getStaticProps({ locale }) {
-
-  if (locale === "nl") {
-    return {
-      notFound: true,
-    }
+export async function getStaticProps() {
+  return {
+    notFound: true,
   }
-
-  return { props: {} };
 }
 
 const PageToExport = (props) => {
