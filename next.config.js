@@ -1,6 +1,9 @@
 module.exports = {
   async rewrites() {
-    return [{ source: "/cms/:path*", destination: "/cms/index.html", locale: false }];
+    return [
+      //{ source: "/cms/:path*", destination: "/cms/index.html", locale: false } // does not work
+      { source: "/cms/(.*)", destination: "/cms/index.html", locale: false } // 
+    ];
   },
   serverRuntimeConfig: {
     rootDir: __dirname,
