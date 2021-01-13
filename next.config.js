@@ -2,7 +2,9 @@ module.exports = {
   async rewrites() {
     return [
       //{ source: "/cms/:path*", destination: "/cms/index.html", locale: false } // does not work
-      { source: "/cms/(.*)", destination: "/cms/index.html", locale: false } // 
+      //{ source: "/cms/(.*)", destination: "/cms/index.html", locale: false } // does not work
+      { source: "/cms/(.*)", destination: "/cms/index.html" } // ?
+      //{ source: "/cms/:path*", destination: "/cms/index.html" } // ?
     ];
   },
   serverRuntimeConfig: {
